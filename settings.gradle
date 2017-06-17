@@ -1,0 +1,6 @@
+rootProject.name = 'microservices'
+//include 'config-server'
+//include 'config-client'
+includeBuild 'config-server'
+includeBuild 'config-client'
+

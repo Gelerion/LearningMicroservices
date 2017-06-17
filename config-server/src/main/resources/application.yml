@@ -1,0 +1,9 @@
+server:
+  port: 8888
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/building-microservices-with-spring-boot/ch05-spring-cloud-config-prop.git

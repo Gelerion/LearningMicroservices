@@ -1,4 +1,4 @@
-package com.gelerion.learning.microservices.gateway.filters;
+package com.gelerion.learning.microservices.balancing.filters;
 
 import java.lang.invoke.MethodHandles;
 

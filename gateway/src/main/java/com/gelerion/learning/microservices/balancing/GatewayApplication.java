@@ -1,7 +1,7 @@
-package com.gelerion.learning.microservices.gateway;
+package com.gelerion.learning.microservices.balancing;
 
-import com.gelerion.learning.microservices.gateway.filters.DebugFilter;
-import com.gelerion.learning.microservices.gateway.filters.ResponseHeaderFilter;
+import com.gelerion.learning.microservices.balancing.filters.DebugFilter;
+import com.gelerion.learning.microservices.balancing.filters.ResponseHeaderFilter;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.zuul.EnableZuulProxy;

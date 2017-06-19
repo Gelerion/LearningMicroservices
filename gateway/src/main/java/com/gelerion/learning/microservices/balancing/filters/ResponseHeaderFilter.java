@@ -1,4 +1,4 @@
-package com.gelerion.learning.microservices.gateway.filters;
+package com.gelerion.learning.microservices.balancing.filters;
 
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;

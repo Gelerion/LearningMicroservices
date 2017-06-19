@@ -22,3 +22,12 @@ Head-of-line blocking:
  HTTP 2 on the hand uses 1 TCP connection per origin and addresses this issue with multiplexing, which allows
  responses to arrive in any order. This allows making a concurrent request which responses arrives as they become
  available with only 1 open TCP connection per origin
+
+Load balancing:
+ * Traffic should be distributed evenly as possible
+ * If one of the services is down, consumer should not make any request to failed service anymore
+To implement this feature you might need:
+ * List of IP addresses to create pool of resources
+ * Health check mechanism to verify running or failing services
+ * Health check frequency, how often health check should be made to update the resource pool
+ * Strategy for load balancing that is how to distribute traffic(e.g. one after another, based on response time, etc.)

@@ -1,0 +1,4 @@
+rootProject.name = 'load-balancing'
+
+include 'recommendations'
+//findProject(':recommendations')?.name = 'recommendations'

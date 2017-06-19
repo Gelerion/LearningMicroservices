@@ -3,4 +3,5 @@ rootProject.name = 'microservices'
 includeBuild 'config-server'
 includeBuild 'config-client'
 includeBuild 'gateway'
+includeBuild 'load-balancing'
 

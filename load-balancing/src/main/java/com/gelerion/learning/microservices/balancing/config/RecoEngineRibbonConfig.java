@@ -6,18 +6,10 @@ import com.netflix.loadbalancer.IRule;
 import com.netflix.loadbalancer.PingUrl;
 import org.springframework.context.annotation.Bean;
 
-/**
- * - list of servers
- * - health check frequency
- * - health check method
- * - load balancing strategy
- */
-public class GlobalRibbonConfig {
+public class RecoEngineRibbonConfig {
 
-    //look at RecoEngineRibbonConfig for more fine grained config
-
-/*    @Bean
-    public IPing ribonPing() {
+    @Bean
+    public IPing ribbonPing() {
         PingUrl pingUrl = new PingUrl();
         pingUrl.setPingAppendString("/health");
         return pingUrl;
@@ -26,5 +18,5 @@ public class GlobalRibbonConfig {
     @Bean
     public IRule ribbonRule() {
         return new AvailabilityFilteringRule();
-    }*/
+    }
 }

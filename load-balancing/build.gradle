@@ -36,6 +36,11 @@ dependencies {
     compile('org.springframework.boot:spring-boot-starter-web')
     compile group: 'com.fasterxml.jackson.datatype', name: 'jackson-datatype-jsr310'
 
+    //hystrix + ribbon - circuit breaker pattern
+    compile('org.springframework.cloud:spring-cloud-starter-hystrix')
+    compile('org.springframework.cloud:spring-cloud-starter-hystrix-dashboard')
+
+
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 

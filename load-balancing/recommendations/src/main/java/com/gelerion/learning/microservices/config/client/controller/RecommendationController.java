@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 @RestController
 public class RecommendationController {
@@ -20,6 +21,15 @@ public class RecommendationController {
         Recommendation recommendation = new Recommendation();
         recommendation.setMeta(new Meta(applicationName));
         recommendation.setRecommendations(getArtistRecommendation());
+        return recommendation;
+    }
+
+    @GetMapping("/recommendations/slow")
+    Recommendation getSlowRecomendations() throws InterruptedException {
+        Recommendation recommendation = new Recommendation();
+        recommendation.setMeta(new Meta(applicationName));
+        recommendation.setRecommendations(getArtistRecommendation());
+        Thread.sleep(new Random().nextInt(1000));
         return recommendation;
     }
 

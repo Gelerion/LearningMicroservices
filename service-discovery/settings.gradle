@@ -1,0 +1,4 @@
+rootProject.name = 'service-discovery'
+
+include 'consumer'
+//findProject(':recommendations')?.name = 'recommendations'
